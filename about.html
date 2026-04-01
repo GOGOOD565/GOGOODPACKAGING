@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Gogood Packaging | Custom Paper Packaging Manufacturer China</title>
+  <meta name="description" content="Learn about GoGoodPackaging — a leading custom paper packaging manufacturer from Shanghai & Wenzhou with 14+ years of experience, serving 500+ clients across 50+ countries." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ── About-page specific styles ── */
+    .about-hero {
+      background: var(--obsidian); padding: 88px 0 64px; position: relative; overflow: hidden;
+    }
+    .about-hero::before {
+      content: ''; position: absolute; inset: 0; opacity: 0.06;
+      background-image: linear-gradient(rgba(232,184,75,1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(232,184,75,1) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+    .about-hero-inner { position: relative; z-index: 2; }
+    .about-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900;
+      color: var(--white); letter-spacing: -0.04em; margin-bottom: 14px;
+    }
+    .about-hero p { color: rgba(255,255,255,0.6); font-size: 1.05rem; max-width: 600px; line-height: 1.78; }
+    .about-hero .breadcrumb { color: rgba(255,255,255,0.4); font-size: 0.8rem; margin-bottom: 20px; }
+    .about-hero .breadcrumb a { color: var(--gold); }
+
+    /* Story section */
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .story-img-stack { position: relative; }
+    .story-img-main {
+      border-radius: var(--radius-lg); aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--warm), var(--warm2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 5rem; box-shadow: var(--shadow-lg); overflow: hidden; position: relative;
+    }
+    .story-img-overlay {
+      position: absolute; bottom: 20px; left: 20px; right: 20px;
+      background: rgba(13,13,20,0.8); backdrop-filter: blur(8px);
+      border: 1px solid rgba(232,184,75,0.3); border-radius: 10px;
+      padding: 14px 18px;
+    }
+    .story-img-overlay p { color: var(--white); font-size: 0.82rem; margin: 0; font-weight: 600; }
+    .story-img-overlay span { color: var(--gold); font-size: 0.72rem; }
+    .story-tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+
+    /* World map */
+    .map-container {
+      position: relative; max-width: 860px; margin: 0 auto;
+    }
+    .map-svg-bg {
+      width: 100%; height: auto; display: block;
+    }
+    /* Dots positioned by % over the SVG */
+    .map-dots { position: absolute; inset: 0; }
+
+    /* Timeline */
+    .timeline { position: relative; max-width: 720px; margin: 0 auto; }
+    .timeline::before {
+      content: ''; position: absolute; left: 22px; top: 0; bottom: 0;
+      width: 2px; background: linear-gradient(to bottom, var(--gold), var(--mint));
+    }
+    .tl-item { display: flex; gap: 28px; margin-bottom: 32px; position: relative; }
+    .tl-dot {
+      flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; font-weight: 800; color: var(--obsidian);
+      box-shadow: 0 0 0 4px rgba(232,184,75,0.2); position: relative; z-index: 2;
+    }
+    .tl-body { padding-top: 8px; }
+    .tl-year { font-size: 0.72rem; font-weight: 800; color: var(--gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+    .tl-title { font-size: 0.96rem; font-weight: 800; color: var(--obsidian); margin-bottom: 6px; }
+    .tl-desc { font-size: 0.84rem; color: var(--steel); line-height: 1.7; }
+
+    @media (max-width: 768px) {
+      .story-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 22 22" fill="none"><rect x="3" y="2" width="16" height="18" rx="2" fill="white" opacity="0.9"/><path d="M7 8h8M7 12h5" stroke="#0D0D14" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <span>Go<span class="brand-good">Good</span>Packaging</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html" style="color:var(--gold)">About Gogood</a></li>
+        <li><a href="index.html#logistics">Shipping</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <a href="https://wa.me/8618217529114" target="_blank" class="nav-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="container about-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; About Gogood</div>
+    <h1>More Than a Manufacturer.<br /><span style="color:var(--gold)">Your Packaging Partner.</span></h1>
+    <p>We don't just produce boxes. We build complete packaging solutions — combining in-house manufacturing, supply chain expertise, and global delivery into one seamless service for your business.</p>
+    <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+      <a href="index.html#contact" class="btn btn-primary">Get a Free Quote</a>
+      <a href="https://wa.me/8618217529114" target="_blank" class="btn btn-wa">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT STATS BAR -->
+<div class="client-stats-bar">
+  <div class="container">
+    <div class="client-stats-grid">
+      <div class="client-stat-item">
+        <div class="client-stat-num count-up" data-target="500" data-suffix="+">500+</div>
+        <div class="client-stat-label">Global B2B Clients</div>
+      </div>
+      <div class="client-stat-item">
+        <div class="client-stat-num">50+</div>
+        <div class="client-stat-label">Countries Reached</div>
+      </div>
+      <div class="client-stat-item">
+        <div class="client-stat-num">14+</div>
+        <div class="client-stat-label">Years of Manufacturing</div>
+      </div>
+      <div class="client-stat-item">
+        <div class="client-stat-num">50M+</div>
+        <div class="client-stat-label">Units Produced / Year</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OUR STORY -->
+<section class="section">
+  <div class="container">
+    <div class="story-grid">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:var(--tag-bg);border:1px solid #EAD8A0;color:var(--gold2);font-size:0.72rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:18px">
+          ✦ Our Story
+        </div>
+        <h2 class="section-title">Born in Shanghai.<br />Built for the World.</h2>
+        <p style="color:var(--steel);font-size:0.95rem;line-height:1.85;margin-bottom:18px">
+          GoGoodPackaging was established with a single conviction: that great packaging should be accessible to every brand, anywhere in the world — without compromising on quality, speed, or service.
+        </p>
+        <p style="color:var(--steel);font-size:0.95rem;line-height:1.85;margin-bottom:18px">
+          We operate our own production facilities in Shanghai and Wenzhou, giving us a vertically integrated supply chain from raw material selection all the way through printing, finishing, and global dispatch. This means no guesswork, no hidden subcontracting — just direct accountability at every step.
+        </p>
+        <p style="color:var(--steel);font-size:0.95rem;line-height:1.85;margin-bottom:24px">
+          Over 14 years later, we serve 500+ clients across 50+ countries — from independent coffee brands in the Middle East to retail chains in Europe and South America. Every order, large or small, receives the same attention to craft and detail.
+        </p>
+        <div class="story-tag-row">
+          <span class="tag green">100% Paper-Based — No Plastic Bags</span>
+          <span class="tag">Food-Grade Safe</span>
+          <span class="tag">In-House Manufacturing</span>
+          <span class="tag green">Complete Supply Chain</span>
+          <span class="tag">Low MOQ</span>
+          <span class="tag">Dieline Templates Provided</span>
+        </div>
+      </div>
+      <div class="story-img-stack">
+        <div class="story-img-main" style="background:linear-gradient(135deg,#1C2E4A,#0D1820)">
+          <img src="images/factory/factory-production-floor.png" alt="GoGoodPackaging Factory" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0" />
+          <div class="story-img-overlay">
+            <p>GoGoodPackaging Production Base</p>
+            <span>Shanghai &amp; Wenzhou, China · Est. 2010</span>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+          <div style="border-radius:12px;aspect-ratio:3/2;background:#1A2E1A;overflow:hidden;box-shadow:var(--shadow)"><img src="images/factory/factory-packing-worker.png" alt="Assembly Line" style="width:100%;height:100%;object-fit:cover" /></div>
+          <div style="border-radius:12px;aspect-ratio:3/2;background:#2E1A0D;overflow:hidden;box-shadow:var(--shadow)"><img src="images/factory/factory-warehouse-shelves.png" alt="Warehouse" style="width:100%;height:100%;object-fit:cover" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO — CAPABILITIES -->
+<section class="section section-warm">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px">
+      <h2 class="section-title">What We Do For You</h2>
+      <p class="section-sub" style="margin:0 auto">A full-service packaging partner — from first sketch to your customer's doorstep.</p>
+    </div>
+    <div class="capability-grid">
+      <div class="capability-card">
+        <div class="capability-icon">🎨</div>
+        <h4>Design &amp; Development</h4>
+        <p>We provide structural dieline templates so your team can prepare print-ready artwork. Once received, we review and deliver a 3D mockup before a single sheet of paper is printed.</p>
+        <ul>
+          <li>Structural dieline templates provided</li>
+          <li>3D mockup before production</li>
+          <li>Pantone &amp; CMYK color matching</li>
+          <li>Artwork review &amp; optimization</li>
+        </ul>
+      </div>
+      <div class="capability-card">
+        <div class="capability-icon">🏭</div>
+        <h4>In-House Manufacturing</h4>
+        <p>We manufacture in our own factories — giving us total control over quality, lead times, and cost. No outsourcing guesswork. No middlemen. Direct from our press to your pallets.</p>
+        <ul>
+          <li>6-color offset printing</li>
+          <li>UV, embossing, hot stamping, foiling</li>
+          <li>Full die-cutting &amp; assembly</li>
+          <li>50M+ units annual capacity</li>
+        </ul>
+      </div>
+      <div class="capability-card">
+        <div class="capability-icon">🔗</div>
+        <h4>Complete Supply Chain</h4>
+        <p>From sourcing the right paper stock to delivering the finished product — we manage an integrated supply chain, so your project stays on time and on budget every time.</p>
+        <ul>
+          <li>Raw material sourcing &amp; QC</li>
+          <li>Strict production scheduling</li>
+          <li>Final inspection before shipment</li>
+          <li>Export documentation included</li>
+        </ul>
+      </div>
+      <div class="capability-card">
+        <div class="capability-icon">🌿</div>
+        <h4>Eco &amp; Compliance</h4>
+        <p>We are committed to sustainable materials — all our products are paper-based, free of plastic bag components, and certified food-safe where applicable.</p>
+        <ul>
+          <li>FDA &amp; EU food-contact certified</li>
+          <li>FSC-certified paper available</li>
+          <li>Water-based food-safe inks</li>
+          <li>Compostable PLA-coated options</li>
+        </ul>
+      </div>
+      <div class="capability-card">
+        <div class="capability-icon">📋</div>
+        <h4>Custom Material Consulting</h4>
+        <p>Not sure what material suits your market or product? We advise on the best paper grades, coatings, print techniques, and finishes for your specific use case and budget.</p>
+        <ul>
+          <li>Kraft, coated, rigid board options</li>
+          <li>Gloss, matte, soft-touch lamination</li>
+          <li>Food-safe coating guidance</li>
+          <li>Cost-per-unit optimization</li>
+        </ul>
+      </div>
+      <div class="capability-card">
+        <div class="capability-icon">🌍</div>
+        <h4>Multi-Country Door-to-Door</h4>
+        <p>We deliver directly to your door. From factory gates in China to warehouses in the Middle East, South America, Europe, or the USA — our logistics team coordinates it all.</p>
+        <ul>
+          <li>Sea freight: FCL &amp; LCL</li>
+          <li>Air freight for urgent orders</li>
+          <li>DDP/DDU door-to-door service</li>
+          <li>Arabic &amp; English documentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPLY CHAIN FLOW -->
+<section class="section section-dark">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px">
+      <h2 class="section-title light">Our <span class="accent">End-to-End</span> Process</h2>
+      <p class="section-sub light" style="margin:0 auto">From your first message to your doorstep — every step handled with precision.</p>
+    </div>
+    <div class="supply-chain">
+      <div class="sc-step">
+        <div class="sc-icon">💬</div>
+        <div class="sc-title">Inquiry</div>
+        <div class="sc-sub">Tell us your needs</div>
+      </div>
+      <div class="sc-step">
+        <div class="sc-icon">💡</div>
+        <div class="sc-title">Design</div>
+        <div class="sc-sub">Free mockup &amp; artwork</div>
+      </div>
+      <div class="sc-step">
+        <div class="sc-icon">🧾</div>
+        <div class="sc-title">Sample</div>
+        <div class="sc-sub">Physical in 5–7 days</div>
+      </div>
+      <div class="sc-step">
+        <div class="sc-icon">✅</div>
+        <div class="sc-title">Approval</div>
+        <div class="sc-sub">Confirm &amp; deposit</div>
+      </div>
+      <div class="sc-step">
+        <div class="sc-icon">🏭</div>
+        <div class="sc-title">Production</div>
+        <div class="sc-sub">2–3 weeks mass run</div>
+      </div>
+      <div class="sc-step">
+        <div class="sc-icon">🔬</div>
+        <div class="sc-title">QC Check</div>
+        <div class="sc-sub">100% inspection</div>
+      </div>
+      <div class="sc-step">
+        <div class="sc-icon">🚢</div>
+        <div class="sc-title">Shipping</div>
+        <div class="sc-sub">Sea / air / express</div>
+      </div>
+      <div class="sc-step">
+        <div class="sc-icon">🚪</div>
+        <div class="sc-title">Your Door</div>
+        <div class="sc-sub">DDP worldwide</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACTORY GALLERY -->
+<section class="section" id="factory">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px">
+      <h2 class="section-title">Our Factory — A Look Inside</h2>
+      <p class="section-sub" style="margin:0 auto">Two production bases. One standard: the highest quality at every stage.</p>
+    </div>
+
+    <!-- CATEGORY 1: MACHINERY & EQUIPMENT -->
+    <div style="margin-bottom:52px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px">
+        <div style="width:4px;height:32px;background:var(--gold);border-radius:2px;flex-shrink:0"></div>
+        <h3 style="font-size:1.1rem;font-weight:700;color:var(--ink);margin:0;letter-spacing:0.04em;text-transform:uppercase">Machinery &amp; Equipment</h3>
+      </div>
+      <!-- Row 1: 1 large + 2 medium -->
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:12px;margin-bottom:12px">
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:280px">
+          <img src="images/factory/factory-production-floor.png" alt="Production floor overview" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Main Production Floor</div>
+        </div>
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:280px">
+          <img src="images/factory/factory-pingan-machine.png" alt="PINGAN printing machine" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">PINGAN Printing Machine</div>
+        </div>
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:280px">
+          <img src="images/factory/factory-large-machine.png" alt="Large die-cutting machine" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Die-Cutting Machine</div>
+        </div>
+      </div>
+      <!-- Row 2: 3 equal -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:220px">
+          <img src="images/factory/factory-printing-machine.png" alt="Flexo printing machine" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Flexo Printing Line</div>
+        </div>
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:220px">
+          <img src="images/factory/factory-uv-machine.png" alt="UV coating machine" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">UV Coating Machine</div>
+        </div>
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:220px">
+          <img src="images/factory/factory-auto-line.jpg" alt="Automated production line" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Automated Assembly Line</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 2: PACKING & ASSEMBLY -->
+    <div style="margin-bottom:52px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px">
+        <div style="width:4px;height:32px;background:var(--mint);border-radius:2px;flex-shrink:0"></div>
+        <h3 style="font-size:1.1rem;font-weight:700;color:var(--ink);margin:0;letter-spacing:0.04em;text-transform:uppercase">Packing &amp; Assembly</h3>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:300px">
+          <img src="images/factory/factory-packing-worker.png" alt="Worker packing boxes" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Material Binding &amp; Packing</div>
+        </div>
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:300px">
+          <img src="images/factory/factory-assembly-workers.png" alt="Workers hand assembling packaging" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Hand Assembly — Quality Workmanship</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 3: INVENTORY & WAREHOUSE -->
+    <div style="margin-bottom:52px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px">
+        <div style="width:4px;height:32px;background:var(--navy);border-radius:2px;flex-shrink:0"></div>
+        <h3 style="font-size:1.1rem;font-weight:700;color:var(--ink);margin:0;letter-spacing:0.04em;text-transform:uppercase">Inventory &amp; Warehouse</h3>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:12px">
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:280px">
+          <img src="images/factory/factory-warehouse-shelves.png" alt="Warehouse shelving system A01-A05" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Organised Warehouse — Shelf System A01–A05</div>
+        </div>
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:280px">
+          <img src="images/factory/factory-stock-inventory.png" alt="Large stock inventory" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Ready Stock — Full Capacity</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 4: LOADING & LOGISTICS -->
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px">
+        <div style="width:4px;height:32px;background:#E8B84B;border-radius:2px;flex-shrink:0"></div>
+        <h3 style="font-size:1.1rem;font-weight:700;color:var(--ink);margin:0;letter-spacing:0.04em;text-transform:uppercase">Loading &amp; Logistics</h3>
+      </div>
+      <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:12px">
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:280px">
+          <img src="images/factory/factory-loading-truck.png" alt="Forklift loading pallets onto truck" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Forklift Loading — Ready to Ship</div>
+        </div>
+        <div style="position:relative;border-radius:14px;overflow:hidden;height:280px">
+          <img src="images/factory/factory-operator.png" alt="Operator running machine" style="width:100%;height:100%;object-fit:cover" />
+          <div class="fg-label">Skilled Machine Operators</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GLOBAL REACH MAP -->
+<section class="section section-dark">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px">
+      <h2 class="section-title light"><span class="accent">Global</span> Client Coverage</h2>
+      <p class="section-sub light" style="margin:0 auto">Our clients span three major continents — and we deliver door-to-door to each one.</p>
+    </div>
+
+    <!-- SVG World Map with dots -->
+    <div class="map-container" style="position:relative;max-width:860px;margin:0 auto">
+      <img src="images/map/world-map-bg.png" alt="Global Coverage Map" style="width:100%;height:auto;display:block;border-radius:16px" />
+
+      <!-- Animated dots: Middle East -->
+      <div style="position:absolute;top:32%;left:60%;transform:translate(-50%,-50%)">
+        <div class="map-dot gold" title="Middle East"></div>
+      </div>
+      <div style="position:absolute;top:34%;left:62%;transform:translate(-50%,-50%)">
+        <div class="map-dot gold"></div>
+      </div>
+      <div style="position:absolute;top:36%;left:58%;transform:translate(-50%,-50%)">
+        <div class="map-dot gold"></div>
+      </div>
+
+      <!-- South America -->
+      <div style="position:absolute;top:64%;left:22%;transform:translate(-50%,-50%)">
+        <div class="map-dot mint"></div>
+      </div>
+      <div style="position:absolute;top:60%;left:24%;transform:translate(-50%,-50%)">
+        <div class="map-dot mint"></div>
+      </div>
+
+      <!-- Europe -->
+      <div style="position:absolute;top:22%;left:43%;transform:translate(-50%,-50%)">
+        <div class="map-dot blue"></div>
+      </div>
+      <div style="position:absolute;top:18%;left:45%;transform:translate(-50%,-50%)">
+        <div class="map-dot blue"></div>
+      </div>
+
+      <!-- North America -->
+      <div style="position:absolute;top:28%;left:12%;transform:translate(-50%,-50%)">
+        <div class="map-dot blue"></div>
+      </div>
+
+      <!-- China (origin) -->
+      <div style="position:absolute;top:30%;left:75%;transform:translate(-50%,-50%)">
+        <div class="map-dot" style="background:var(--gold);color:var(--gold);width:18px;height:18px;box-shadow:0 0 12px var(--gold)"></div>
+      </div>
+    </div>
+
+    <div class="map-legend">
+      <div class="map-legend-item">
+        <div class="map-legend-dot" style="background:var(--gold)"></div> Middle East (UAE, KSA, Egypt, Qatar…)
+      </div>
+      <div class="map-legend-item">
+        <div class="map-legend-dot" style="background:var(--mint)"></div> South America (Brazil, Argentina, Chile…)
+      </div>
+      <div class="map-legend-item">
+        <div class="map-legend-dot" style="background:#60A5FA"></div> Europe &amp; North America
+      </div>
+      <div class="map-legend-item">
+        <div class="map-legend-dot" style="background:var(--gold);box-shadow:0 0 6px var(--gold)"></div> Our Factory — China
+      </div>
+    </div>
+
+    <!-- Region cards -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px">
+      <div style="background:rgba(232,184,75,0.1);border:1px solid rgba(232,184,75,0.3);border-radius:14px;padding:22px">
+        <div style="font-size:1.8rem;margin-bottom:10px">🌙</div>
+        <h4 style="color:var(--gold);font-size:0.9rem;font-weight:800;margin-bottom:8px">Middle East</h4>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.82rem;line-height:1.7">UAE, Saudi Arabia, Egypt, Qatar, Kuwait, Oman, Bahrain, Jordan — regular sea shipments, DDP door-to-door, Arabic documentation.</p>
+      </div>
+      <div style="background:rgba(0,200,150,0.1);border:1px solid rgba(0,200,150,0.3);border-radius:14px;padding:22px">
+        <div style="font-size:1.8rem;margin-bottom:10px">🌎</div>
+        <h4 style="color:var(--mint);font-size:0.9rem;font-weight:800;margin-bottom:8px">South America</h4>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.82rem;line-height:1.7">Brazil, Argentina, Chile, Colombia, Mexico, Peru — competitive sea freight rates, Spanish documentation available on request.</p>
+      </div>
+      <div style="background:rgba(96,165,250,0.1);border:1px solid rgba(96,165,250,0.3);border-radius:14px;padding:22px">
+        <div style="font-size:1.8rem;margin-bottom:10px">🌍</div>
+        <h4 style="color:#60A5FA;font-size:0.9rem;font-weight:800;margin-bottom:8px">Europe &amp; North America</h4>
+        <p style="color:rgba(255,255,255,0.6);font-size:0.82rem;line-height:1.7">Germany, France, UK, Netherlands, USA, Canada — FCL to major ports, full DDP customs clearance service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRADE SHOWS -->
+<section class="section section-warm" id="tradeshow">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px">
+      <h2 class="section-title">We Show Up — Literally</h2>
+      <p class="section-sub" style="margin:0 auto">We attend the world's leading packaging and trade fairs every year. Come say hello — or reach us anytime online.</p>
+    </div>
+    <div class="tradeshow-grid">
+      <div class="tradeshow-card" style="background:linear-gradient(135deg,#1C2E4A,#0D1820);grid-column:span 2">
+        <img src="images/tradeshow/tradeshow-booth-wide.png" alt="Interpack Trade Show" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0" />
+        <div class="ts-overlay"></div>
+        <div class="ts-label">Interpack — Düsseldorf, Germany · World's Largest Packaging Trade Fair</div>
+      </div>
+      <div class="tradeshow-card" style="background:linear-gradient(135deg,#1A2E20,#0D1810)">
+        <img src="images/tradeshow/tradeshow-booth-team.png" alt="Canton Fair" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0" />
+        <div class="ts-overlay"></div>
+        <div class="ts-label">Canton Fair · Guangzhou, China</div>
+      </div>
+      <div class="tradeshow-card" style="background:linear-gradient(135deg,#2E1A0D,#180D06)">
+        <img src="images/tradeshow/tradeshow-products-display.png" alt="Pack Expo" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0" />
+        <div class="ts-overlay"></div>
+        <div class="ts-label">Pack Expo — Las Vegas, USA</div>
+      </div>
+      <div class="tradeshow-card" style="background:linear-gradient(135deg,#1A1A2E,#0D0D18)">
+        <img src="images/tradeshow/tradeshow-products-collection.png" alt="Big5 Dubai" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0" />
+        <div class="ts-overlay"></div>
+        <div class="ts-label">Big5 Construct — Dubai, UAE</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPANY TIMELINE -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px">
+      <h2 class="section-title">Our Journey</h2>
+      <p class="section-sub" style="margin:0 auto">14+ years of growth, one order at a time.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">10</div>
+        <div class="tl-body">
+          <div class="tl-year">2010</div>
+          <div class="tl-title">Founded in Shanghai</div>
+          <div class="tl-desc">GoGoodPackaging started operations in Shanghai with a focus on custom food-grade paper bags and gift boxes for the local wholesale market.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">13</div>
+        <div class="tl-body">
+          <div class="tl-year">2013</div>
+          <div class="tl-title">Wenzhou Production Base Opens</div>
+          <div class="tl-desc">We expanded with a dedicated Wenzhou production facility, doubling our capacity for rigid boxes and luxury packaging lines.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">15</div>
+        <div class="tl-body">
+          <div class="tl-year">2015</div>
+          <div class="tl-title">First Middle East Export</div>
+          <div class="tl-desc">Successfully shipped our first full container to the UAE — launching what would become one of our strongest market relationships.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">18</div>
+        <div class="tl-body">
+          <div class="tl-year">2018</div>
+          <div class="tl-title">ISO 9001 Certification Achieved</div>
+          <div class="tl-desc">Formal quality management certification, reinforcing our commitment to consistent production standards across all product lines.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">21</div>
+        <div class="tl-body">
+          <div class="tl-year">2021</div>
+          <div class="tl-title">South America &amp; Europe Expansion</div>
+          <div class="tl-desc">Launched dedicated DDP shipping lanes for South America and Europe, enabling truly seamless door-to-door service for clients in Brazil, Germany, France and beyond.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">24</div>
+        <div class="tl-body">
+          <div class="tl-year">2024–Today</div>
+          <div class="tl-title">500+ Clients, 50+ Countries</div>
+          <div class="tl-desc">Our client base spans over 50 countries across the Middle East, Asia, Europe, and the Americas. We continue to innovate in sustainable materials, product design, and global delivery.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-warm" id="faq">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub" style="margin:0 auto">Everything you need to know before placing your first order.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q">
+          What is your minimum order quantity (MOQ)?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Our MOQ is kept flexible and accessible — we welcome orders from growing brands and established distributors alike. The exact minimum depends on the product type, print complexity, and material. We encourage you to contact us with your specific needs, and our team will find a workable solution for your budget and scale.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          How long does it take to produce my order?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Physical samples are typically ready in 5–7 business days. After your sample approval and deposit, mass production usually takes 2–3 weeks depending on order volume and product complexity. Rush production is available — contact us to discuss.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Can you provide dieline files?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Yes. We provide structural dieline templates for every product so your design team can create artwork to the exact specifications. Customers are responsible for preparing and supplying their own print-ready artwork. Once we receive your artwork, we will review it and provide a digital proof within 24 hours before production begins.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Do you offer door-to-door delivery to the Middle East?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Yes — door-to-door delivery (DDP) is one of our core services for clients in the Middle East, including UAE, Saudi Arabia, Egypt, Qatar, Kuwait, Oman and Bahrain. We handle sea freight, customs clearance, and final delivery to your warehouse. We also provide bilingual Arabic/English shipping documentation.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Are your products food-safe and certified?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          All food-contact products are manufactured to FDA (USA) and EU food safety standards using 100% virgin wood pulp and water-based, food-safe inks. Our food-grade lines undergo migration testing and we can provide full compliance documentation upon request. FSC-certified paper options are also available.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Do you use plastic bags or plastic packaging materials?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          No. Our entire product range is paper-based. We do not manufacture plastic bags. Where a food-safe moisture barrier is required, we use PLA (plant-based, compostable) coatings or PE lining — not single-use plastics. This is central to our commitment to sustainable packaging.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Can you send me a price list?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Because all our products are fully customized, pricing depends on the specific size, material, print colors, finish, and quantity. We do not publish a generic price list. Instead, please tell us your product requirements and we will provide a detailed, accurate quotation — typically within 24 business hours.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          How do I place an order?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          The process is: Inquiry → Quotation → Sample → Sample Approval → Deposit Payment → Design Confirmation → Production → QC Inspection → Shipping → Delivery. Contact us via email at sales@gogoodpackaging.com or on WhatsApp at +86 182 1752 9114 to start.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Do you offer samples before mass production?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          Yes — we strongly recommend requesting a physical sample before committing to mass production. Our samples are made using the same materials and processes as the final product, so you can check every detail: structure, print quality, finish, and fit. Sample lead time is 5–7 business days.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          What printing techniques are available?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          We offer 6-color offset printing, digital printing, UV spot coating, matte and gloss lamination, soft-touch lamination, hot stamping (gold / silver / custom), blind embossing, debossing, foil blocking, and screen printing. We can combine multiple techniques in a single product for premium results.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section style="background:linear-gradient(135deg,var(--gold) 0%,#F5C843 60%,var(--gold) 100%);padding:64px 0;background-size:200% auto;animation:shimmer 5s linear infinite">
+  <div class="container" style="text-align:center">
+    <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:var(--obsidian);letter-spacing:-0.03em;margin-bottom:14px">
+      Ready to Build Your Custom Packaging?
+    </h2>
+    <p style="color:rgba(13,13,20,0.65);font-size:1rem;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto">
+      Get a free quote and sample within 7 days. Talk to our team now.
+    </p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="index.html#contact" class="btn btn-dark">📩 Send Inquiry</a>
+      <a href="https://wa.me/8618217529114" target="_blank" class="btn btn-wa">💬 WhatsApp Now</a>
+      <a href="products.html" class="btn btn-outline">View All Products</a>
+    </div>
+    <p style="margin-top:18px;font-size:0.78rem;color:rgba(13,13,20,0.5)">
+      Direct contact: sales@gogoodpackaging.com
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 22 22" fill="none"><rect x="3" y="2" width="16" height="18" rx="2" fill="white" opacity="0.9"/><path d="M7 8h8M7 12h5" stroke="#0D0D14" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <span>Go<span class="brand-good">Good</span>Packaging</span>
+        </a>
+        <p>Premium custom paper packaging. Shanghai + Wenzhou factory. Food-grade, eco-friendly &amp; luxury packaging for global B2B buyers.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <ul>
+          <li><a href="products.html">Food-Grade Paper Bags</a></li>
+          <li><a href="products.html">Gift &amp; Luxury Boxes</a></li>
+          <li><a href="products.html">Eco Paper Cups</a></li>
+          <li><a href="products.html">Kraft Paper Tubes</a></li>
+          <li><a href="products.html">Custom Labels</a></li>
+          <li><a href="products.html">All Products →</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Gogood</a></li>
+          <li><a href="#factory">Factory Gallery</a></li>
+          <li><a href="#tradeshow">Trade Shows</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="ar/index.html">العربية</a></li>
+          <li><a href="es/index.html">Español</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:sales@gogoodpackaging.com">sales@gogoodpackaging.com</a></li>
+          <li><a href="https://wa.me/8618217529114">WhatsApp: +86 182 1752 9114</a></li>
+          <li><a href="index.html#contact">B2B Inquiry Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2021 GoGoodPackaging.com. All rights reserved. B2B Factory Direct — No Retail.</p>
+      <div class="footer-certs">
+        <span class="footer-cert">ISO 9001</span>
+        <span class="footer-cert">FDA</span>
+        <span class="footer-cert">FSC</span>
+        <span class="footer-cert">SGS</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/8618217529114" target="_blank" class="float-wa" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
