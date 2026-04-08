@@ -878,3 +878,101 @@ body.rtl .stat-item::before { left: auto; right: 0; }
   /* Factory category grids → single column on mobile */
   #factory [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
 }
+
+/* ============================================================
+   PRODUCT MARQUEE / SCROLL STRIP
+   ============================================================ */
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-section {
+  background: var(--obsidian);
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid rgba(232,184,75,0.15);
+  border-bottom: 1px solid rgba(232,184,75,0.15);
+}
+
+.marquee-label {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  background: var(--gold);
+  color: var(--obsidian);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  writing-mode: horizontal-tb;
+  white-space: nowrap;
+}
+
+/* Left/right fade edges */
+.marquee-track-wrap {
+  margin-left: 100px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  width: 180px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.marquee-item:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: rgba(232,184,75,0.5);
+  box-shadow: 0 8px 28px rgba(232,184,75,0.15);
+}
+
+.marquee-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.marquee-item span {
+  display: block;
+  padding: 8px 10px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .marquee-label { padding: 0 14px; font-size: 0.6rem; }
+  .marquee-track-wrap { margin-left: 72px; }
+  .marquee-item { width: 140px; }
+  .marquee-item img { height: 110px; }
+}
