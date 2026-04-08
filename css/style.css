@@ -945,9 +945,9 @@ body.rtl .stat-item::before { left: auto; right: 0; }
 }
 
 .marquee-item:hover {
-  transform: translateY(-4px) scale(1.03);
-  border-color: rgba(232,184,75,0.5);
-  box-shadow: 0 8px 28px rgba(232,184,75,0.15);
+  transform: translateY(-5px) scale(1.04);
+  border-color: rgba(232,184,75,0.6);
+  box-shadow: 0 10px 32px rgba(232,184,75,0.2);
 }
 
 .marquee-item img {
@@ -955,6 +955,11 @@ body.rtl .stat-item::before { left: auto; right: 0; }
   height: 140px;
   object-fit: cover;
   display: block;
+  transition: transform 0.4s ease;
+}
+
+.marquee-item:hover img {
+  transform: scale(1.08);
 }
 
 .marquee-item span {
