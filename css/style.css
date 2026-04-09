@@ -285,6 +285,62 @@ a:hover { color: var(--gold2); }
 }
 .stat-item .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 4px; font-weight: 500; }
 
+/* ---------- Hero Section ---------- */
+.hero {
+  background: var(--obsidian);
+  color: var(--white);
+  padding: 120px 0 100px;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+}
+.hero-pattern {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(232,184,75,0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+}
+.hero-shape {
+  position: absolute; top: -10%; right: -10%;
+  width: 60%; height: 80%;
+  background: radial-gradient(circle, rgba(232,184,75,0.12) 0%, transparent 70%);
+  filter: blur(80px);
+}
+.hero-shape2 {
+  position: absolute; bottom: -10%; left: -5%;
+  width: 40%; height: 60%;
+  background: radial-gradient(circle, rgba(0,200,150,0.08) 0%, transparent 70%);
+  filter: blur(80px);
+}
+.hero-inner {
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px;
+  align-items: center; position: relative; z-index: 2;
+}
+.hero-content h1 {
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-weight: 900; line-height: 1.05;
+  margin-bottom: 24px; letter-spacing: -0.04em;
+}
+.hero-content .highlight { color: var(--gold); }
+.hero-content .highlight-mint { color: var(--mint); }
+.hero-sub {
+  font-size: 1.2rem; color: rgba(255,255,255,0.7);
+  margin-bottom: 40px; max-width: 540px; line-height: 1.65;
+}
+.hero-eyebrow {
+  color: var(--gold); font-size: 0.85rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 16px;
+}
+.hero-ctas { display: flex; gap: 16px; margin-bottom: 56px; }
+.hero-stats { display: flex; gap: 40px; }
+.stat-item .stat-num {
+  font-size: 1.8rem; font-weight: 800; color: var(--white);
+  line-height: 1; letter-spacing: -0.03em;
+}
+.stat-item .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 4px; font-weight: 500; }
+
 /* Hero visual side */
 .hero-visual {
   display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
