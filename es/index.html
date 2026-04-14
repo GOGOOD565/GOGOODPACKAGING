@@ -3,41 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoGoodPackaging — Fábrica Premium de Envases de Papel Personalizados</title>
+  <title>GoGoodPackaging | Fabricante Premium de Envases de Papel Personalizados — Fábrica B2B China</title>
+  <meta name="description" content="Fabricante premium de envases de papel personalizados desde Shanghai y Wenzhou. Bolsas alimentarias, cajas de regalo de lujo, vasos de papel ecológicos, cajas de cigarrillos, tubos kraft, etiquetas personalizadas. MOQ bajo. Envío puerta a puerta global." />
   <link rel="stylesheet" href="../css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container nav-inner">
-    <a href="../index.html" class="logo">GoGoodPackaging</a>
-    <ul class="nav-links">
-      <li><a href="../index.html">English</a></li>
-      <li><a href="../ar/index.html">العربية</a></li>
-      <li><a href="#products">Productos</a></li>
-      <li><a href="#contact" class="btn btn-gold">Cotizar</a></li>
-    </ul>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="2" width="16" height="18" rx="2" fill="white" opacity="0.9"/>
+            <path d="M7 8h8M7 12h5" stroke="#0D0D14" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span>Go<span class="brand-good">Good</span>Packaging</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">English</a></li>
+        <li><a href="../ar/index.html">العربية</a></li>
+        <li><a href="#products">Productos</a></li>
+        <li><a href="../about.html">Sobre Nosotros</a></li>
+        <li><a href="#logistics">Envíos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn" onclick="location.href='../index.html'">EN</button>
+          <button class="lang-btn" onclick="location.href='../ar/index.html'">AR</button>
+          <button class="lang-btn active">ES</button>
+        </div>
+        <a href="https://wa.me/8618217529114" target="_blank" class="nav-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </nav>
   </div>
-</nav>
+</header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-content">
-      <div class="hero-tag">Fábrica B2B Directa — De China al Mundo</div>
-      <h1>Packaging de Papel <span style="color:var(--gold)">Personalizado</span> que Eleva su Marca</h1>
-      <p>Fabricamos bolsas de compra de lujo, cajas de regalo premium y envases alimentarios ecológicos. Calidad superior, precios de fábrica y envío global.</p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn btn-primary">Iniciar Proyecto</a>
-        <a href="../products.html" class="btn btn-outline">Ver Catálogo</a>
+<section class="hero" id="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-shape"></div>
+  <div class="hero-shape2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Shanghai y Wenzhou · Est. 2010 · +50 Países</div>
+        <h1>Envases de Papel<br /><span class="highlight">Personalizados</span><br />para Escala <span class="highlight-mint">Global</span></h1>
+        <p class="hero-sub">Del concepto a las manos de su cliente — diseñamos, fabricamos y entregamos soluciones completas de envases de papel. MOQ bajo. Puerta a puerta en todo el mundo.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Muestra Gratis &amp; Cotización</a>
+          <a href="https://wa.me/8618217529114" target="_blank" class="btn btn-wa">💬 WhatsApp Ahora</a>
+          <a href="../products.html" class="btn btn-outline-white">Ver Catálogo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Clientes Globales</div></div>
+          <div class="stat-item"><div class="stat-num">14+</div><div class="stat-label">Años de Experiencia</div></div>
+          <div class="stat-item"><div class="stat-num">ISO</div><div class="stat-label">9001 Certificado</div></div>
+        </div>
       </div>
-    </div>
-    <div class="hero-image-wrap">
-      <div class="hero-main-img" style="background:linear-gradient(135deg,#FDF5E6,#F5E8C8)">
-        <img src="../images/products/prod-scroll-1.png" alt="Premium Packaging" style="width:100%;height:100%;object-fit:contain" />
+      <div class="hero-visual">
+        <div class="hero-card large" style="background:linear-gradient(135deg,#1C2E4A,#0D0D14)">
+          <img src="../images/hero/hero-giftboxes.png" alt="Cajas de Regalo de Lujo" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:16px" />
+          <div class="hero-card-label">Cajas de Regalo de Lujo</div>
+        </div>
+        <div class="hero-card small top" style="background:linear-gradient(135deg,#FDF5E6,#F5E8C8)">
+          <img src="../images/hero/hero-shopping-bag.png" alt="Bolsas de Papel" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:16px" />
+          <div class="hero-card-label">Bolsas Eco</div>
+        </div>
+        <div class="hero-card small bottom" style="background:linear-gradient(135deg,#E0F5EC,#F0F8F4)">
+          <img src="../images/hero/hero-coffee-cup.png" alt="Vasos de Papel Eco" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:16px" />
+          <div class="hero-card-label">Vasos de Papel</div>
+        </div>
       </div>
     </div>
   </div>
@@ -48,54 +92,271 @@
   <div class="marquee-label">NUESTROS PRODUCTOS</div>
   <div class="marquee-track-wrap">
     <div class="marquee-track" id="marqueeTrackEs">
-      <!-- Images injected here -->
     </div>
   </div>
 </section>
 
-<!-- PRODUCT GRID (12 CATEGORIES) -->
+<!-- USP STRIP -->
+<div class="usp-strip">
+  <div class="container"><div class="usp-inner">
+    <div class="usp-item"><span>🚀</span> Envío Global Rápido</div>
+    <div class="usp-item"><span>🎨</span> Mockups 3D Gratis</div>
+    <div class="usp-item"><span>♻️</span> 100% Sostenible</div>
+    <div class="usp-item"><span>🏭</span> Precio Directo de Fábrica</div>
+  </div></div>
+</div>
+
+<!-- PRODUCT GRID -->
 <section class="section section-warm" id="products">
   <div class="container">
     <h2 class="section-title">Nuestra Gama de Productos</h2>
-    <p class="section-sub">Doce categorías principales, enfoque en soluciones premium.</p>
+    <p class="section-sub">Doce categorías principales, enfocadas en soluciones de papel premium. <a href="../products.html" style="color:var(--gold);font-weight:700">Ver todos los productos →</a></p>
     <div class="prod-grid">
       <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-1.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Bolsas de Compra de Lujo</h3><p>Papel de arte premium con asas de cinta.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
       <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-2.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Bolsas Kraft Ecológicas</h3><p>Papel kraft virgen 100% reciclable.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
       <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-3.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas de Cigarrillos</h3><p>Empaque de papel profesional para tabaco.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
       <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-4.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas de Regalo Rígidas</h3><p>Cartón de alta resistencia para joyería.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-5.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas Plegables</h3><p>Diseño eficiente con cierre magnético.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-6.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Envases para Alimentos</h3><p>Soluciones seguras para panadería y takeaway.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-7.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Vasos de Papel Eco</h3><p>Vasos biodegradables para bebidas.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-8.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas de Envío Corrugadas</h3><p>Cartón corrugado para e-commerce.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-9.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Tubos de Papel Kraft</h3><p>Cilindros para té, velas y vino.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-10.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Etiquetas y Adhesivos</h3><p>Troquelados personalizados para su marca.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-11.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas de Joyería</h3><p>Empaque premium para boutiques de lujo.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
-      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-12.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Soluciones de Transporte</h3><p>Soportes de papel para botellas y vasos.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-5.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas Plegables</h3><p>Diseño con cierre magnético ahorra espacio.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-6.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Bag-in-Box Packaging</h3><p>Bolsa interior + caja corrugada con asa.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-7.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas de Papel Alimentario</h3><p>Soluciones seguras para panadería y takeaway.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-8.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Vasos de Papel Eco</h3><p>Vasos sostenibles para bebidas frías y calientes.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-9.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas de Envío Corrugadas</h3><p>Envío duradero para e-commerce.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-10.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Tubos de Papel Kraft</h3><p>Botes cilíndricos en espiral.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-11.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Etiquetas y Adhesivos</h3><p>Troquelados personalizados para su marca.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
+      <div class="prod-card"><div class="prod-card-img" style="background:#fff"><img src="../images/products/prod-main-12.png" style="width:100%;height:100%;object-fit:contain;position:absolute;inset:0" /></div><div class="prod-card-body"><h3>Cajas de Joyería y Regalo</h3><p>Empaque de lujo para boutiques.</p><div class="prod-card-footer"><a href="#contact" class="btn btn-primary btn-sm">Cotizar</a></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- FACTORY (RESTORED PHOTOS) -->
+<!-- FACTORY -->
 <section class="section" id="factory">
   <div class="container">
     <div class="factory-grid">
       <div class="factory-text">
         <h2 class="section-title">Nuestra Fábrica y Capacidades</h2>
-        <p>Establecidos hace más de una década, Shanghái y Wenzhou nos brindan control total de calidad y velocidad.</p>
-        <div style="margin-top:28px"><a href="../about.html" class="btn btn-primary">Ver Galería Completa →</a></div>
+        <p style="color:var(--steel);font-size:0.95rem;line-height:1.8">Operación dual de fábrica establecida en Shanghai y Wenzhou. Capacidad y control de calidad incomparables.</p>
+        <div class="factory-stats">
+          <div class="factory-stat"><div class="num">50M+</div><div class="label">Unidades / Año</div></div>
+          <div class="factory-stat"><div class="num">ISO</div><div class="label">9001 Certificado</div></div>
+        </div>
+        <div style="margin-top:28px"><a href="../about.html" class="btn btn-primary">Galería Completa de Fábrica →</a></div>
       </div>
       <div class="factory-img-grid">
-        <div class="factory-img"><img src="../images/factory/factory-pingan-machine.jpg" alt="Machinery" /></div>
-        <div class="factory-img"><img src="../images/factory/factory-hand-assembly.png" alt="Assembly" /></div>
-        <div class="factory-img"><img src="../images/factory/factory-production-floor.jpg" alt="Production" /></div>
-        <div class="factory-img"><img src="../images/factory/factory-stock-inventory.jpg" alt="Warehouse" /></div>
+        <div class="factory-img"><img src="https://sc01.alicdn.com/kf/S0a111c569d78431dad3839d3955a39489.png" alt="Production Line" /></div>
+        <div class="factory-img"><img src="https://sc01.alicdn.com/kf/S410845e29c4f4c42b7e79fcf91408c5bM.png" alt="Precision Machine Parts" /></div>
+        <div class="factory-img"><img src="https://sc01.alicdn.com/kf/S8d0466b3a4b64c3ebd5f95bde6b17869d.png" alt="Large Printing Machine" /></div>
+        <div class="factory-img"><img src="https://sc01.alicdn.com/kf/S1758f1dbfb37401595b16403ccf8ca09A.png" alt="Factory Floor Overview" /></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- LOGISTICS -->
+<section class="section section-navy" id="logistics">
+  <div class="container">
+    <h2 class="section-title light">Entrega Puerta a Puerta <span class="accent">Internacional</span></h2>
+    <p class="section-sub light">Coordinamos el envío desde nuestra fábrica directamente a su puerta — Oriente Medio, América del Sur, Europa y América del Norte.</p>
+    <div class="logistics-grid">
+      <div class="logistics-card">
+        <div class="log-icon">🌍</div>
+        <h4>Cobertura Oriente Medio</h4>
+        <p>Rutas FCL/LCL dedicadas a EAU, Arabia Saudita, Egipto, Qatar, Kuwait, Omán, Baréin. Tiempos de tránsito estables. Documentación en árabe disponible.</p>
+      </div>
+      <div class="logistics-card">
+        <div class="log-icon">🌎</div>
+        <h4>Américas y Europa</h4>
+        <p>Salidas regulares a Rotterdam, Hamburgo, Miami, Los Ángeles, São Paulo. FCL y groupage LCL completos. Servicio DDP puerta a puerta.</p>
+      </div>
+      <div class="logistics-card">
+        <div class="log-icon">✈️</div>
+        <h4>Flete Aéreo y Express</h4>
+        <p>Muestras urgentes y lotes pequeños vía DHL / FedEx / UPS. De fábrica a su puerta en 3–7 días. Tarifas competitivas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section section-warm">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title">Certificaciones y Cumplimiento</h2>
+    <p class="section-sub" style="margin:0 auto 0">Documentación de cumplimiento completa disponible bajo solicitud para todas las líneas de productos.</p>
+    <div class="cert-strip">
+      <div class="cert-badge-lg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        ISO 9001 Gestión de Calidad
+      </div>
+      <div class="cert-badge-lg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        FDA Contacto Alimentario Seguro
+      </div>
+      <div class="cert-badge-lg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Cumplimiento Seguridad Alimentaria UE
+      </div>
+      <div class="cert-badge-lg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Opciones de Papel Certificadas FSC
+      </div>
+      <div class="cert-badge-lg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Inspeccionado por SGS
+      </div>
+      <div class="cert-badge-lg">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Tintas Conformes REACH / RoHS
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Inicie su Pedido Personalizado</h2>
+        <p>Cuéntenos su producto, cantidad y visión de diseño. Nuestros especialistas responden en 24 horas hábiles con una cotización detallada y oferta de muestra gratis.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="cm-icon gold">📧</div>
+            <div>
+              <div class="cm-label">Consulta de Ventas</div>
+              <div class="cm-value">sales@gogoodpackaging.com</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon wa">💬</div>
+            <div>
+              <div class="cm-label">WhatsApp (Respuesta Rápida)</div>
+              <div class="cm-value">+86 182 1752 9114</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon gold">⏱️</div>
+            <div>
+              <div class="cm-label">Tiempo de Respuesta</div>
+              <div class="cm-value">Dentro de 24 Horas Hábiles</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon gold">🏭</div>
+            <div>
+              <div class="cm-label">Ubicaciones de Fábrica</div>
+              <div class="cm-value">Shanghai + Wenzhou, China</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:24px">
+          <a href="https://wa.me/8618217529114" target="_blank" class="btn btn-wa" style="width:100%;justify-content:center;display:flex;gap:8px;align-items:center">
+            💬 Chatear en WhatsApp Ahora
+          </a>
+        </div>
+      </div>
+
+      <div class="inquiry-card">
+        <form id="inquiryForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre Completo</label>
+              <input type="text" name="name" placeholder="Su nombre" />
+            </div>
+            <div class="form-group">
+              <label>Nombre de Empresa</label>
+              <input type="text" name="company" placeholder="Su empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" name="email" placeholder="usted@empresa.com" required />
+            </div>
+            <div class="form-group">
+              <label>País</label>
+              <select name="country">
+                <option value="">— Seleccionar País —</option>
+                <optgroup label="Oriente Medio">
+                  <option>EAU</option><option>Arabia Saudita</option><option>Egipto</option>
+                  <option>Qatar</option><option>Kuwait</option><option>Omán</option><option>Baréin</option>
+                </optgroup>
+                <optgroup label="Europa / EE.UU.">
+                  <option>Estados Unidos</option><option>Alemania</option><option>Francia</option>
+                  <option>Reino Unido</option><option>España</option><option>Italia</option><option>Países Bajos</option>
+                </optgroup>
+                <optgroup label="América del Sur">
+                  <option>Brasil</option><option>Argentina</option><option>Chile</option>
+                  <option>Colombia</option><option>México</option><option>Perú</option>
+                </optgroup>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Producto de Interés *</label>
+            <select name="product" required>
+              <option value="">— Seleccionar Producto —</option>
+              <option>Bolsas de Papel Alimentario</option>
+              <option>Cajas de Regalo Plegables</option>
+              <option>Cajas de Regalo Rígidas de Lujo</option>
+              <option>Vasos de Papel Eco</option>
+              <option>Cajas de Cigarrillos y Tabaco</option>
+              <option>Cajas con Cierre Magnético</option>
+              <option>Bolsas de Compra de Lujo</option>
+              <option>Cajas Cajón Deslizante</option>
+              <option>Serie de Packaging para Café</option>
+              <option>Tubos y Botes de Papel Kraft</option>
+              <option>Etiquetas y Adhesivos Personalizados</option>
+              <option>Papel de Seda y Papel de Regalo</option>
+              <option>Bolsas de Papel para Vino</option>
+              <option>Múltiples Productos</option>
+              <option>Otro / Solicitud Personalizada</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Cantidad Estimada</label>
+              <input type="text" name="quantity" placeholder="ej. 5.000 uds" />
+            </div>
+            <div class="form-group">
+              <label>Tamaño / Dimensiones (si se conoce)</label>
+              <input type="text" name="size" placeholder="ej. 30×20×10 cm" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Diseño y Requisitos</label>
+            <textarea name="message" placeholder="Describa su producto, requisitos de impresión, preferencias de material, mercado objetivo, plazos de entrega, etc."></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              📩 Enviar Consulta — Obtener Cotización Gratis
+            </button>
+          </div>
+          <p style="font-size:0.72rem;color:rgba(255,255,255,0.35);margin-top:10px;text-align:center">
+            Las consultas son manejadas directamente por nuestro equipo en sales@gogoodpackaging.com
+          </p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="fs-icon">✅</div>
+          <h4>¡Consulta Enviada!</h4>
+          <p>Gracias. Nuestros especialistas responderán dentro de 24 horas hábiles con una cotización detallada y oferta de muestra gratis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container"><p>© 2021 GoGoodPackaging.com. Todos los derechos reservados.</p></div>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">GoGoodPackaging</a>
+        <p>Base de fábrica Shanghai + Wenzhou. Venta mayorista B2B.</p>
+      </div>
+      <div class="footer-col"><h5>Contacto</h5><ul><li>sales@gogoodpackaging.com</li><li>+86 182 1752 9114</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2021 GoGoodPackaging.com. Todos los derechos reservados.</p></div>
+  </div>
 </footer>
 
 <script>
@@ -104,15 +365,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if(!track) return;
   const items = [];
   for(let i=1; i<=70; i++) { items.push(`<div class="marquee-item"><img src="../images/products/prod-scroll-${i}.png" alt="Product ${i}" /><span>Muestra de Empaque</span></div>`); }
-  items.push(`<div class="marquee-item"><img src="../images/products/prod-scroll-cigarette.png" alt="Cigarette Box" /><span>Caja de Cigarrillos</span></div>`);
-  for(let i=1; i<=15; i++) { items.push(`<div class="marquee-item"><img src="../images/products/prod-scroll-${i}.png" alt="Product ${i}" /><span>Muestra de Empaque</span></div>`); }
   track.innerHTML = items.join('');
-});
-</script>
-<script src="../js/main.js"></script>
-</body>
-</html>
-items.join('');
 });
 </script>
 <script src="../js/main.js"></script>
