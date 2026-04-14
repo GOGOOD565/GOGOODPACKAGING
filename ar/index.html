@@ -366,7 +366,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if(!track) return;
   const items = [];
   for(let i=1; i<=70; i++) { items.push(`<div class="marquee-item"><img src="../images/products/prod-scroll-${i}.png" alt="Product ${i}" /><span>عينة تغليف</span></div>`); }
-  track.innerHTML = items.join('');
+  const html = items.join('');
+  track.innerHTML = html + html;
 });
 </script>
 <script src="../js/main.js"></script>
