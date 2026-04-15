@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const track = document.getElementById('marqueeTrackAr');
   if(!track) return;
   const items = [];
-  for(let i=1; i<=70; i++) { items.push(`<div class="marquee-item"><img src="../images/products/prod-scroll-${i}.png" alt="Product ${i}" /><span>عينة تغليف</span></div>`); }
+  for(let i=70; i>=1; i--) { items.push(`<div class="marquee-item"><img src="../images/products/prod-scroll-${i}.png" alt="Product ${i}" /><span>عينة تغليف</span></div>`); }
   const html = items.join('');
   track.innerHTML = html + html;
 });

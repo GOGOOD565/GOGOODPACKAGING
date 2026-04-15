@@ -1055,7 +1055,7 @@ body.rtl .marquee-track-wrap {
           mask-image: linear-gradient(to left, transparent 0%, black 6%, black 94%, transparent 100%);
 }
 body.rtl .marquee-track {
-  animation-name: marquee-scroll-rtl;
+  animation-name: marquee-scroll;
 }
 @media (max-width: 768px) {
   body.rtl .marquee-track-wrap { margin-right: 72px; margin-left: 0; }
